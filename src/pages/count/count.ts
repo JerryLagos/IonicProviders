@@ -19,7 +19,7 @@ export class CountPage {
   // https://github.com/JerryLagos/julion-ion.git
   options: Array<{option: string, nota:string, img: string}>;
   listD:object = {error: true, data: []};
-  formu:object = {name: '', email: '', login: ''};
+  formu:object = {title: '', body: ''};
   
   constructor(
     public navCtrl: NavController, 
@@ -83,6 +83,9 @@ export class CountPage {
   }
 
   viewData(data:any){
+    this.rest.saveArticles(data).subscribe((res:any) => {
+      console.log(res);
+    })
     console.log(data);
   }
   // Alertas para ionic

@@ -21,5 +21,9 @@ export class MyserviceProvider {
   getArticles() {
     return this.http.get('http://localhost:3000/api/v1/articles');
   }
+
+  saveArticles(data:any){
+    return this.http.post('http://localhost:3000/api/v1/articles', data)
+  }
   // this.HttpHeaders().set("Auto", "this is my information");
 }

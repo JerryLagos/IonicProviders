@@ -60,18 +60,15 @@
 
   <ion-item>
     <ion-label fixed>Name</ion-label>
-    <ion-input type="text" value="" [(ngModel)]="formu.name"></ion-input>
+    <ion-input type="text" value="" [(ngModel)]="formu.title"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label fixed>Email</ion-label>
-    <ion-input type="email" [(ngModel)]="formu.email"></ion-input>
+    <ion-input type="email" [(ngModel)]="formu.body"></ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-label fixed>Login</ion-label>
-    <ion-input type="login" [(ngModel)]="formu.login"></ion-input>
-  </ion-item>
+
 
   <button ion-button block (click)="viewData(formu)">Guardar</button>
 
